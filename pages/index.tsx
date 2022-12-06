@@ -1,6 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+
+import ImageProfile from "../components/ImageProfile";
+import Navbar from "../components/Navbar";
+import Section from "../components/Section";
+import SubTitle from "../components/SubTitle";
 
 export default function Home() {
   return (
@@ -11,61 +15,66 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <Navbar />
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
+      <main className="flex flex-col">
+        <ImageProfile></ImageProfile>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <div className="bg-back flex flex-col text-center ">
+          <div id="pageIndex" className="border-b border-second pb-8">
+            <div className="relative top-[-50px] z-10 flex justify-center">
+              <h1 className="text-white text-5xl font-extrabold w-[80vw] rounded-t-full bg-back pt-14">
+                Leandro
+                <br />
+                Rocha
+              </h1>
+            </div>
+            <SubTitle subTitle="Programmer"></SubTitle>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <p>Texto</p>
+            <a className="button" href="http://">
+              Entre em Contato
+            </a>
+          </div>
+          <Section title="Sobre" id="About">
+            <>
+              <p>paragrafo 1</p>
+              <p>paragrafo 2</p>
+            </>
+          </Section>
+          <Section title="Serviços" id="Services">
+            <>
+              <p>paragrafo 1</p>
+              <p>paragrafo 2</p>
+            </>
+          </Section>
+          <Section title="Experiencia" id="Experience">
+            <>
+              <p>paragrafo 1</p>
+              <p>paragrafo 2</p>
+            </>
+          </Section>
+          <Section title="Skills" id="Skills">
+            <>
+              <p>paragrafo 1</p>
+              <p>paragrafo 2</p>
+            </>
+          </Section>
+          <Section title="Portfolio" id="Portfolio">
+            <>
+              <p>paragrafo 1</p>
+              <p>paragrafo 2</p>
+            </>
+          </Section>
+          <Section title="Contato" id="Contact">
+            <>
+              <p>paragrafo 1</p>
+              <p>paragrafo 2</p>
+            </>
+          </Section>
+          <footer></footer>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
-  )
+  );
 }
