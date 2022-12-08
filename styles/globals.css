@@ -3,5 +3,18 @@
 @tailwind utilities;
 
 .button {
-  @apply border-second border rounded-full p-4 inline-block uppercase text-white font-light;
+  @apply border-second border rounded-full p-4 inline-block uppercase text-white font-semibold text-xs;
+}
+
+p {
+  @apply mb-4;
+  text-align: auto;
+}
+
+h4 {
+  @apply mb-6 font-extrabold text-2xl;
+}
+
+#Services .icon {
+  @apply text-primary text-4xl h-12 flex items-center mb-2;
 }

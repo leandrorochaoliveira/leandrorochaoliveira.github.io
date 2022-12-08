@@ -4,7 +4,8 @@ import styles from "../styles/Home.module.css";
 import ImageProfile from "../components/ImageProfile";
 import Navbar from "../components/Navbar";
 import Section from "../components/Section";
-import SubTitle from "../components/SubTitle";
+
+import { DiAndroid, DiCode, DiPhotoshop } from "react-icons/di";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
         <ImageProfile></ImageProfile>
 
         <div className="bg-back flex flex-col text-center ">
-          <div id="pageIndex" className="border-b border-second pb-8">
+          <div id="pageIndex" className="">
             <div className="relative top-[-50px] z-10 flex justify-center">
               <h1 className="text-white text-5xl font-extrabold w-[80vw] rounded-t-full bg-back pt-14">
                 Leandro
@@ -29,23 +30,76 @@ export default function Home() {
                 Rocha
               </h1>
             </div>
-            <SubTitle subTitle="Programmer"></SubTitle>
-
-            <p>Texto</p>
-            <a className="button" href="http://">
-              Entre em Contato
-            </a>
           </div>
-          <Section title="Sobre" id="About">
+          <Section id="Index" subTitle="Programmer">
             <>
-              <p>paragrafo 1</p>
-              <p>paragrafo 2</p>
+              <p>
+                Hello! I am Web Developer from United States, New York. I have
+                rich experience in web site design and building, also I am good
+                at wordpress. I love to talk with you about our unique.
+              </p>
+              <p className="text-center lg:text-left">
+                <a className="button mt-4 " href="http://">
+                  Entre em Contato
+                </a>
+              </p>
             </>
           </Section>
-          <Section title="Serviços" id="Services">
+
+          <Section title="Sobre" id="About" subTitle="MY STORY">
             <>
-              <p>paragrafo 1</p>
-              <p>paragrafo 2</p>
+              <p>
+                Pellentesque posuere. Praesent turpis. Aenean posuere, tortor
+                sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin
+                urna dolor sagittis lacus. Pellentesque posuere. Praesent
+                turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue
+                blandit nunc, eu sollicitudin urna dolor sagittis lacus.
+              </p>
+              <p>
+                Pellentesque posuere. Praesent turpis. Aenean posuere, tortor
+                sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin
+                urna dolor sagittis lacus. Donec elit libero, sodales nec,
+                volutpat a, suscipit non, turpis.
+              </p>
+            </>
+          </Section>
+          <Section title="Serviços" id="Services" subTitle="O que eu faço">
+            <>
+              <div className="grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <div>
+                  <div className="icon">
+                    <DiCode />
+                  </div>
+                  <h4>Web Development</h4>
+                  <p>
+                    The web development process includes: web design, web
+                    content, client-side / server-side scripting and network
+                    security configuration.
+                  </p>
+                </div>
+                <div>
+                  <div className="icon">
+                    <DiAndroid />
+                  </div>
+                  <h4>App Development</h4>
+                  <p>
+                    The web development process includes: web design, web
+                    content, client-side / server-side scripting and network
+                    security configuration.
+                  </p>
+                </div>
+                <div>
+                  <div className="icon">
+                    <DiPhotoshop />
+                  </div>
+                  <h4>Web Design</h4>
+                  <p>
+                    a The web development process includes: web design, web
+                    content, client-side / server-side scripting and network
+                    security configuration.
+                  </p>
+                </div>
+              </div>
             </>
           </Section>
           <Section title="Experiencia" id="Experience">
