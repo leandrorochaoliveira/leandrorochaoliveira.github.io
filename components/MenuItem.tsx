@@ -1,8 +1,9 @@
 type Props = {
-   title: string;
+  title: string;
+  linkref: string;
 }
-export default function MenuItem({title}: Props) {
-  return( 
-      <li><a href="" className="font-semibold uppercase">{title}</a></li>
+export default function MenuItem({ title, linkref }: Props) {
+  return (
+    <li><a href={linkref} className="font-semibold uppercase">{title}</a></li>
   )
 }
