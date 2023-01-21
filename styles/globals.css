@@ -3,12 +3,24 @@
 @tailwind utilities;
 
 .button {
-  @apply border-second border rounded-full p-4 inline-block uppercase text-white font-semibold text-xs;
+  @apply border-primary overflow-hidden relative border transition-all	rounded-full p-4 uppercase text-primary font-semibold text-xs flex items-center gap-1;
+}
+
+.button:hover {
+  @apply text-white
+}
+
+.button::before {
+  content:"";
+  @apply bg-primary z-0 rounded-full transition-all block absolute h-full w-0 top-0 left-1/2 translate-x--1/2 
+}
+
+.button:hover::before {
+  @apply w-full left-0 translate-x-0
 }
 
 p {
-  @apply mb-4;
-  text-align: auto;
+  @apply mb-4 text-start;
 }
 
 h4 {
