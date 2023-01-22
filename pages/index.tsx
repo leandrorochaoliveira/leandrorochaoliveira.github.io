@@ -36,11 +36,8 @@ export default function Home() {
               </div>
               <Section id="Index" subTitle="Programmer">
                 <>
-                  <p>
-                    Hello! I am Web Developer from United States, New York. I have
-                    rich experience in web site design and building, also I am good
-                    at wordpress. I love to talk with you about our unique.
-                  </p>
+                  <p>Olá, sou um desenvolvedor Full Stack apaixonado por criar soluções funcionais e atrativas tanto no frontend quanto no backend</p>
+
                   <p className="text-center lg:text-left">
                     <Button click={() => { }} title="Entre em Contato"></Button>
                   </p>
@@ -56,26 +53,17 @@ export default function Home() {
             </div>
           </div>
 
-          <Section title="Sobre" id="About" subTitle="MY STORY">
+          <Section title="Sobre" id="About" subTitle="Minha história">
             <>
-              <p>
-                Pellentesque posuere. Praesent turpis. Aenean posuere, tortor
-                sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin
-                urna dolor sagittis lacus. Pellentesque posuere. Praesent
-                turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue
-                blandit nunc, eu sollicitudin urna dolor sagittis lacus.
-              </p>
-              <p>
-                Pellentesque posuere. Praesent turpis. Aenean posuere, tortor
-                sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin
-                urna dolor sagittis lacus. Donec elit libero, sodales nec,
-                volutpat a, suscipit non, turpis.
+              <p>Com mais de uma década de experiência e desde 2012 dedicado especificamente ao desenvolvimento de software, possuo uma sólida base de conhecimento e habilidades para atuar com sucesso em projetos de programação.</p>
+              <p>Com minha experiência em HTML, CSS e JavaScript, além de minha familiaridade com ferramentas e bibliotecas como Vue.js e React, sou capaz de criar interfaces interativas e elegantes, garantindo um bom desempenho e usabilidade para os usuários. No backend, possuo experiência com PHP e integrações com API Rest.</p>
+              <p>Meu objetivo é sempre oferecer a melhor experiência possível para os usuários e estou sempre em busca de aprender novas tecnologias e técnicas para melhorar meus projetos.
               </p>
               <div className="grid gap-x-16 gap-y-1 grid-cols-1 md:grid-cols-4 lg:grid-cols-8">
-                <SubTitle subTitle={"Age"}></SubTitle>
+                <SubTitle subTitle={"Idade"}></SubTitle>
                 <span className="col-span-3">32</span>
 
-                <SubTitle subTitle={"ADDRESS"}></SubTitle>
+                <SubTitle subTitle={"Endereço"}></SubTitle>
                 <span className="col-span-3">
                   Formiga - Minas Gerais - Brasil
                 </span>
@@ -87,7 +75,7 @@ export default function Home() {
                   </a>
                 </span>
 
-                <SubTitle subTitle={"Phone"}></SubTitle>
+                <SubTitle subTitle={"Telefone"}></SubTitle>
                 <span className="col-span-3">
                   <a href="tel:+5537999110817">(37) 9 9911-0817</a>
                 </span>
@@ -135,8 +123,6 @@ export default function Home() {
           </Section>
           <Section title="Experiencia" id="Experience" subTitle="WORKING WITH">
             <div className="grid grid-cols-1 md:grid-cols-2 mt-4">
-
-
               <ExperienciaItem
                 title="TrackerUp"
                 period="2019 - Presente"
@@ -152,7 +138,7 @@ export default function Home() {
               <ExperienciaItem
                 title="Celula Web"
                 period="2012 - 2017"
-                description="Desenvolvimento de sites, manutenção, monitoramento e atualizações de layout ou funcionalidades"
+                description="Desenvolvimento de sites, manutenção, monitoramento, atualizações de layout e funcionalidades"
                 link="https://celulaweb.com.br"
               />
               <ExperienciaItem
@@ -160,10 +146,6 @@ export default function Home() {
                 period="2007 - 2011"
                 description="Montagem e assistência técnica em computadores, redes, vendas, atendimento ao cliente"
               />
-
-
-
-
             </div>
           </Section>
           <Section title="Skills" id="Skills">
@@ -232,10 +214,10 @@ export default function Home() {
               </div>
               <div className="rounded-3xl py-16 px-8 border  border-[#585d65] ">
                 <div className="grid gap-x-16 gap-y-1 grid-cols-4">
-                  <SubTitle subTitle={"Age"}></SubTitle>
+                  <SubTitle subTitle={"Idade"}></SubTitle>
                   <span className="col-span-3">32</span>
 
-                  <SubTitle subTitle={"ADDRESS"}></SubTitle>
+                  <SubTitle subTitle={"Endereço"}></SubTitle>
                   <span className="col-span-3">
                     Formiga - Minas Gerais - Brasil
                   </span>
@@ -247,7 +229,7 @@ export default function Home() {
                     </a>
                   </span>
 
-                  <SubTitle subTitle={"Phone"}></SubTitle>
+                  <SubTitle subTitle={"Telefone"}></SubTitle>
                   <span className="col-span-3">
                     <a href="tel:+5537999110817">(37) 9 9911-0817</a>
                   </span>
