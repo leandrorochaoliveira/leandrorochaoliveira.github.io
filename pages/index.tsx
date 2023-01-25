@@ -35,7 +35,7 @@ export default function Home() {
                   Rocha
                 </h1>
               </div>
-              <Section id="Index" subTitle="Programmer">
+              <Section id="Index" subTitle="Programador">
                 <>
                   <p>Olá, sou um desenvolvedor Full Stack apaixonado por criar soluções funcionais e atrativas tanto no frontend quanto no backend</p>
 
@@ -103,7 +103,7 @@ export default function Home() {
                   <h4>App Development</h4>
                   <p>
                     Desenvolvimento de aplicativos IOS e Android utilizando React Native e Ionic/Cordova
-                    Tenho experiência em publicação nas principais lojas de apps(App Store e Play Store)
+                    Tenho experiência em publicação nas principais lojas de apps (App Store e Play Store)
                   </p>
                 </div>
                 {/*<div>
@@ -120,7 +120,7 @@ export default function Home() {
               </div>
             </>
           </Section>
-          <Section title="Experiencia" id="Experience" subTitle="WORKING WITH">
+          <Section title="Experiencia" id="Experience" subTitle="Trabalhos">
             <div className="grid grid-cols-1 md:grid-cols-2 mt-4">
               <ExperienciaItem
                 title="TrackerUp"
@@ -153,7 +153,7 @@ export default function Home() {
               <p>paragrafo 2</p>
             </>
           </Section>
-          <Section title="Portfolio" id="Portfolio" subTitle="ALGUNS TRABALHOS">
+          <Section title="Portfolio" id="Portfolio" subTitle="Projetos realizados">
             <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <PortfolioItem />
               <PortfolioItem />
@@ -163,7 +163,7 @@ export default function Home() {
               <PortfolioItem />
             </div>
           </Section>
-          <Section title="Contato" id="Contact" subTitle="LET'S TALK">
+          <Section title="Contato" id="Contact" subTitle="Vamos tomar um café?">
             <div className="grid gap-8 grid-cols-2">
               <div>
                 <div className="mb-6">
@@ -176,7 +176,7 @@ export default function Home() {
                   <input
                     type="text"
                     id="large-input"
-                    placeholder="Your contact name"
+                    placeholder="Nome"
                     className="block w-full p-4 text-white text-sm  outline-none border border-[#585d65] rounded-3xl bg-back sm:text-md focus:ring-white focus:border-white"
                   />
                 </div>
@@ -191,7 +191,7 @@ export default function Home() {
                   <input
                     type="text"
                     id="large-input"
-                    placeholder="example@domain.com"
+                    placeholder="exemplo@gmail.com"
                     className="block w-full p-4 text-white text-sm  outline-none border border-[#585d65] rounded-3xl bg-back sm:text-md focus:ring-white focus:border-white"
                   />
                 </div>
@@ -201,18 +201,18 @@ export default function Home() {
                     htmlFor="message"
                     className="block mb-2 ml-6 text-sm font-medium text-gray-900 dark:text-white"
                   >
-                    Your message
+                    Sua mensagem
                   </label>
                   <textarea
                     id="message"
                     rows={4}
                     className="block p-3 w-full text-sm outline-none text-white rounded-3xl border  border-[#585d65]  bg-back sm:text-md focus:ring-white focus:border-white"
-                    placeholder="To Write"
+                    placeholder="Escreva aqui"
                   ></textarea>
                 </div>
 
                 <div>
-                  <Button click={() => { }} title="Send Message"><BiMailSend className="" /></Button>
+                  <Button click={() => { }} title="Enviar Mensagem"><BiMailSend className="" /></Button>
                 </div>
               </div>
               <div className="rounded-3xl py-16 px-8 border  border-[#585d65] ">
