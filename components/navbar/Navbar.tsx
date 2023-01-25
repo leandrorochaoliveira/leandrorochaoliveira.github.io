@@ -13,7 +13,7 @@ export default function Navbar() {
         />
       </div>
       <div id="menu" className='flex-1 '>
-        <Menu/>
+        <Menu />
       </div>
       <div id="menu-icon"></div>
       <div id="donwlod-cv" className="h-full">

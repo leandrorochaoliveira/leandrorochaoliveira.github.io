@@ -2,11 +2,12 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 import ImageProfile from "../components/ImageProfile";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar/Navbar";
 import Section from "../components/Section";
 import SubTitle from "../components/SubTitle";
 import Button from "../components/Button";
-import ExperienciaItem from "../components/ExperienciaItem";
+import ExperienciaItem from "../components/experiencia/ExperienciaItem";
+import PortfolioItem from "../components/portfolio/PortfolioItem";
 
 import { DiAndroid, DiCode, DiPhotoshop } from "react-icons/di";
 import { BiMailSend, BiChevronsDown } from "react-icons/bi";
@@ -91,9 +92,8 @@ export default function Home() {
                   </div>
                   <h4>Web Development</h4>
                   <p>
-                    The web development process includes: web design, web
-                    content, client-side / server-side scripting and network
-                    security configuration.
+                    Desenvolvimento de aplicativos, sites e sistemas web.
+                    Tenho experiência em ferramentas de web design e conhecimento em SEO
                   </p>
                 </div>
                 <div>
@@ -102,22 +102,21 @@ export default function Home() {
                   </div>
                   <h4>App Development</h4>
                   <p>
-                    The web development process includes: web design, web
-                    content, client-side / server-side scripting and network
-                    security configuration.
+                    Desenvolvimento de aplicativos IOS e Android utilizando React Native e Ionic/Cordova
+                    Tenho experiência em publicação nas principais lojas de apps(App Store e Play Store)
                   </p>
                 </div>
-                <div>
+                {/*<div>
                   <div className="icon">
                     <DiPhotoshop />
                   </div>
                   <h4>Web Design</h4>
                   <p>
-                    a The web development process includes: web design, web
+                    Da The web development process includes: web design, web
                     content, client-side / server-side scripting and network
                     security configuration.
                   </p>
-                </div>
+                </div>*/}
               </div>
             </>
           </Section>
@@ -154,11 +153,15 @@ export default function Home() {
               <p>paragrafo 2</p>
             </>
           </Section>
-          <Section title="Portfolio" id="Portfolio">
-            <>
-              <p>paragrafo 1</p>
-              <p>paragrafo 2</p>
-            </>
+          <Section title="Portfolio" id="Portfolio" subTitle="ALGUNS TRABALHOS">
+            <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              <PortfolioItem />
+              <PortfolioItem />
+              <PortfolioItem />
+              <PortfolioItem />
+              <PortfolioItem />
+              <PortfolioItem />
+            </div>
           </Section>
           <Section title="Contato" id="Contact" subTitle="LET'S TALK">
             <div className="grid gap-8 grid-cols-2">

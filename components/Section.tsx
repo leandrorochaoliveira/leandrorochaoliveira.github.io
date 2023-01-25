@@ -13,7 +13,7 @@ const Section = ({ title, children, id, subTitle }: Props) => (
         {title}
       </h2>
     )}
-    {subTitle && <SubTitle subTitle={subTitle}></SubTitle>}
+    {subTitle && <div className="uppercase"><SubTitle subTitle={subTitle}></SubTitle></div>}
     <div className="text-left text-white ">{children}</div>
   </section>
 );
