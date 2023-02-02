@@ -1,4 +1,3 @@
-import { type } from "os";
 import SubTitle from "../SubTitle";
 
 type portfolioProps = {
@@ -7,12 +6,11 @@ type portfolioProps = {
   url?: string
 }
 
-export default function PortfolioItem({ }: portfolioProps) {
-  let subTitle = 'Portfolio item';
+export default function PortfolioItem({ image, subTitle, url }: portfolioProps) {
   return (
     <div>
       <div>
-        <img src="https://via.placeholder.com/680" alt="" />
+        <img src={image} alt={subTitle} />
       </div>
       <div className="text-center mt-3">
         {subTitle && <SubTitle subTitle={subTitle}></SubTitle>}

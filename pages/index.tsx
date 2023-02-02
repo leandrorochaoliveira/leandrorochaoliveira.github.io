@@ -7,10 +7,10 @@ import Section from "../components/Section";
 import SubTitle from "../components/SubTitle";
 import Button from "../components/Button";
 import ExperienciaItem from "../components/experiencia/ExperienciaItem";
-import PortfolioItem from "../components/portfolio/PortfolioItem";
 
 import { DiAndroid, DiCode, DiPhotoshop } from "react-icons/di";
 import { BiMailSend, BiChevronsDown } from "react-icons/bi";
+import Portfolio from "../components/portfolio/Portfolio";
 
 export default function Home() {
   return (
@@ -124,7 +124,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 mt-4">
               <ExperienciaItem
                 title="TrackerUp"
-                period="2019 - Presente"
+                period="2019 - 2023"
                 description="Desenvolvimento de aplicativo e sistema de monitoramento de equipes externas"
                 link="https://trackerup.com.br"
               />
@@ -147,24 +147,15 @@ export default function Home() {
               />
             </div>
           </Section>
-          <Section title="Skills" id="Skills">
+          {/* <Section title="Skills" id="Skills">
             <>
               <p>paragrafo 1</p>
               <p>paragrafo 2</p>
             </>
-          </Section>
-          <Section title="Portfolio" id="Portfolio" subTitle="Projetos realizados">
-            <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-              <PortfolioItem />
-              <PortfolioItem />
-              <PortfolioItem />
-              <PortfolioItem />
-              <PortfolioItem />
-              <PortfolioItem />
-            </div>
-          </Section>
+          </Section> */}
+          <Portfolio />
           <Section title="Contato" id="Contact" subTitle="Vamos tomar um café?">
-            <div className="grid gap-8 grid-cols-2">
+            <div className="grid gap-8 grid-cols-2 relative">
               <div>
                 <div className="mb-6">
                   <label
@@ -215,7 +206,7 @@ export default function Home() {
                   <Button click={() => { }} title="Enviar Mensagem"><BiMailSend className="" /></Button>
                 </div>
               </div>
-              <div className="rounded-3xl py-16 px-8 border  border-[#585d65] ">
+              <div className="rounded-3xl py-16 px-8 border  border-[#585d65] bg-back ">
                 <div className="grid gap-x-16 gap-y-1 grid-cols-4">
                   <SubTitle subTitle={"Idade"}></SubTitle>
                   <span className="col-span-3">32</span>
