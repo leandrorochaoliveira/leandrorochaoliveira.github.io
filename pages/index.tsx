@@ -155,7 +155,7 @@ export default function Home() {
           </Section> */}
           <Portfolio />
           <Section title="Contato" id="Contact" subTitle="Vamos tomar um café?">
-            <div className="grid gap-8 grid-cols-2 relative">
+            <div className="grid gap-8 lg:grid-cols-2 relative">
               <div>
                 <div className="mb-6">
                   <label
@@ -207,7 +207,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="rounded-3xl py-16 px-8 border  border-[#585d65] bg-back ">
-                <div className="grid gap-x-16 gap-y-1 grid-cols-4">
+                <div className="grid gap-x-16 gap-y-1 lg:grid-cols-4">
                   <SubTitle subTitle={"Idade"}></SubTitle>
                   <span className="col-span-3">32</span>
 
