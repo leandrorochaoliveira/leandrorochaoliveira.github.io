@@ -17,7 +17,7 @@ export default function Portfolio() {
         <p>Alguns dos projetos que tive a chance de participar</p>
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <PortfolioItem image={datacamp.src} url="" subTitle="Datacamp" />
-          <PortfolioItem image={andressa_salomone.src} url="Andressa Salomone" />
+          <PortfolioItem image={andressa_salomone.src} url="Andressa Salomone" subTitle="Andressa Salomone" />
           <PortfolioItem image={unifor.src} url="" subTitle="Unifor" />
           <PortfolioItem image={trackerup.src} url="" subTitle="TrackerUp" />
           <PortfolioItem image={newvalue.src} url="" subTitle="NewValue" />

@@ -6,11 +6,11 @@ import Navbar from "../components/navbar/Navbar";
 import Section from "../components/Section";
 import SubTitle from "../components/SubTitle";
 import Button from "../components/Button";
-import ExperienciaItem from "../components/experiencia/ExperienciaItem";
-
 import { DiAndroid, DiCode, DiPhotoshop } from "react-icons/di";
 import { BiMailSend, BiChevronsDown } from "react-icons/bi";
 import Portfolio from "../components/portfolio/Portfolio";
+import Experiencia from "../components/experiencia/Experiencia";
+import { scrollToElement } from "../shared/scroll";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
 
 
         <div className="bg-back ">
-          <div id="pageIndex" className="lg:h-screen text-center flex flex-col lg:flex-row items-center">
+          <div id="Home" className="lg:h-screen text-center flex flex-col lg:flex-row items-center">
             <ImageProfile></ImageProfile>
             <div className="lg:w-1/2 mt-10">
               <div className="relative top-[-50px] z-10 flex justify-center">
@@ -40,13 +40,13 @@ export default function Home() {
                   <p>Olá, sou um desenvolvedor Full Stack apaixonado por criar soluções funcionais e atrativas tanto no frontend quanto no backend</p>
 
                   <p className="text-center lg:text-left">
-                    <Button click={() => { }} title="Entre em Contato"></Button>
+                    <Button click={() => scrollToElement(`#Contact`, null)} title="Entre em Contato"></Button>
                   </p>
                 </>
               </Section>
 
               <div className="text-center w-full">
-                <a href="" className="text-white inline-block text-3xl mt-8">
+                <a href="" onClick={(e) => scrollToElement(`#About`, e)} className="text-white inline-block text-3xl mt-8">
                   <BiChevronsDown />
                 </a>
               </div>
@@ -120,33 +120,7 @@ export default function Home() {
               </div>
             </>
           </Section>
-          <Section title="Experiencia" id="Experience" subTitle="Trabalhos">
-            <div className="grid grid-cols-1 md:grid-cols-2 mt-4">
-              <ExperienciaItem
-                title="TrackerUp"
-                period="2019 - 2023"
-                description="Desenvolvimento de aplicativo e sistema de monitoramento de equipes externas"
-                link="https://trackerup.com.br"
-              />
-              <ExperienciaItem
-                title="PullUp Tecnologia"
-                period="2017 - 2019"
-                description="Desenvolvimento de sites, aplicativos e e-commerce para todos os tipos de negocios"
-                link="https://pullup.tech"
-              />
-              <ExperienciaItem
-                title="Celula Web"
-                period="2012 - 2017"
-                description="Desenvolvimento de sites, manutenção, monitoramento, atualizações de layout e funcionalidades"
-                link="https://celulaweb.com.br"
-              />
-              <ExperienciaItem
-                title="Plug Informática"
-                period="2007 - 2011"
-                description="Montagem e assistência técnica em computadores, redes, vendas, atendimento ao cliente"
-              />
-            </div>
-          </Section>
+          <Experiencia />
           {/* <Section title="Skills" id="Skills">
             <>
               <p>paragrafo 1</p>
