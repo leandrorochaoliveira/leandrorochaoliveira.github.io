@@ -20,7 +20,7 @@
 }
 
 p {
-  @apply mb-4 text-start;
+  @apply mb-4 text-start font-normal
 }
 
 h4 {
