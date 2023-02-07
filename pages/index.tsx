@@ -43,12 +43,12 @@ export default function Home() {
                     <div>
 
                       <p >
-                        <a href="https://www.linkedin.com/in/leandrorochaoliveira/" target={"_blank"} className="text-primary text-xl">
+                        <a href="https://www.linkedin.com/in/leandrorochaoliveira/" target={"_blank"} rel="noreferrer" className="text-primary text-xl">
                           <FaLinkedin className="inline-block mr-1" />in/leandrorochaoliveira
                         </a>
                       </p>
                       <p >
-                        <a href="https://github.com/leandrorochaoliveira" target={"_blank"} className="text-primary text-xl">
+                        <a href="https://github.com/leandrorochaoliveira" target={"_blank"} rel="noreferrer" className="text-primary text-xl">
                           <FaGithubSquare className="inline-block mr-1" />leandrorochaoliveira</a>
                       </p>
                     </div>
