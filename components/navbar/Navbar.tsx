@@ -45,7 +45,7 @@ export default function Navbar() {
         <a
           href="/curriculo.pdf"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="rounded-full flex items-center justify-center w-[64px] lg:w-auto p-4 lg:px-8 lg:h-full border border-primary text-primary"
         >
           <span className='hidden lg:block'>Download CV</span>
