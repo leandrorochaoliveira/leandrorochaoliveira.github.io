@@ -6,8 +6,9 @@ import Navbar from "../components/navbar/Navbar";
 import Section from "../components/Section";
 import SubTitle from "../components/SubTitle";
 import Button from "../components/Button";
-import { DiAndroid, DiCode, DiPhotoshop } from "react-icons/di";
+import { DiAndroid, DiCode } from "react-icons/di";
 import { BiMailSend, BiChevronsDown } from "react-icons/bi";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa"
 import Portfolio from "../components/portfolio/Portfolio";
 import Experiencia from "../components/experiencia/Experiencia";
 import { scrollToElement } from "../shared/scroll";
@@ -38,10 +39,21 @@ export default function Home() {
               <Section id="Index" subTitle="Programador">
                 <>
                   <p>Olá, sou um desenvolvedor Full Stack apaixonado por criar soluções funcionais e atrativas tanto no frontend quanto no backend</p>
+                  <div className="flex items-center flex-col">
+                    <div>
 
-                  <p className="text-center lg:text-left">
-                    <Button click={() => scrollToElement(`#Contact`, null)} title="Entre em Contato"></Button>
-                  </p>
+                      <p >
+                        <a href="https://www.linkedin.com/in/leandrorochaoliveira/" target={"_blank"} className="text-primary text-xl">
+                          <FaLinkedin className="inline-block mr-1" />in/leandrorochaoliveira
+                        </a>
+                      </p>
+                      <p >
+                        <a href="https://github.com/leandrorochaoliveira" target={"_blank"} className="text-primary text-xl">
+                          <FaGithubSquare className="inline-block mr-1" />leandrorochaoliveira</a>
+                      </p>
+                    </div>
+
+                  </div>
                 </>
               </Section>
 
