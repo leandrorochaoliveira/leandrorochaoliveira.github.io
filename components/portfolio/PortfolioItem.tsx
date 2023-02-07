@@ -4,7 +4,7 @@ import Image from "next/image"
 type portfolioProps = {
   image: string
   subTitle: string
-  url?1: string
+  url?: string
 }
 
 export default function PortfolioItem({ image, subTitle, url }: portfolioProps) {
