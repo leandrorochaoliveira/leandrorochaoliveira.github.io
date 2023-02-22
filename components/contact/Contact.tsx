@@ -13,7 +13,7 @@ export default function Contact() {
           <div className="grid gap-x-16 gap-y-1 lg:grid-cols-4">
             <SubTitle subTitle={"Whatsapp"}></SubTitle>
             <span className="col-span-3">
-              <a className="flex items-center gap-1" href="https://wa.me/5537999110817" target={"_blank"}>Envie uma mensagem<FaWhatsapp /></a>
+              <a className="flex items-center gap-1" href="https://wa.me/5537999110817" target={"_blank"} rel="noopener noreferrer">Envie uma mensagem<FaWhatsapp /></a>
             </span>
 
             {/*   <SubTitle subTitle={"Endereço"}></SubTitle>
