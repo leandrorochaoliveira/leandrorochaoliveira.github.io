@@ -12,11 +12,12 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Script
+        id="script-src"
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=YNKDVFB2T2`}
       />
 
-      <Script strategy="lazyOnload">
+      <Script id="script-gtag" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
