@@ -12,6 +12,7 @@ import { FaGithubSquare, FaLinkedin } from "react-icons/fa"
 import Portfolio from "../components/portfolio/Portfolio";
 import Experiencia from "../components/experiencia/Experiencia";
 import { scrollToElement } from "../shared/scroll";
+import Contact from "../components/contact/Contact";
 
 export default function Home() {
   return (
@@ -44,7 +45,7 @@ export default function Home() {
 
                       <p >
                         <a href="https://www.linkedin.com/in/leandrorochaoliveira/" target={"_blank"} rel="noreferrer" className="text-primary text-xl">
-                          <FaLinkedin className="inline-block mr-1" />in/leandrorochaoliveira
+                          <FaLinkedin className="inline-block mr-1" />leandrorochaoliveira
                         </a>
                       </p>
                       <p >
@@ -140,83 +141,7 @@ export default function Home() {
             </>
           </Section> */}
           <Portfolio />
-          <Section title="Contato" id="Contact" subTitle="Vamos tomar um café?">
-            <div className="grid gap-8 lg:grid-cols-2 relative">
-              <div>
-                <div className="mb-6">
-                  <label
-                    htmlFor="large-input"
-                    className="block mb-2 ml-6 text-sm font-medium text-gray-900 dark:text-white"
-                  >
-                    Nome
-                  </label>
-                  <input
-                    type="text"
-                    id="large-input"
-                    placeholder="Nome"
-                    className="block w-full p-4 text-white text-sm  outline-none border border-[#585d65] rounded-3xl bg-back sm:text-md focus:ring-white focus:border-white"
-                  />
-                </div>
-
-                <div className="mb-6">
-                  <label
-                    htmlFor="large-input"
-                    className="block mb-2 ml-6 text-sm font-medium text-gray-900 dark:text-white"
-                  >
-                    E-mail
-                  </label>
-                  <input
-                    type="text"
-                    id="large-input"
-                    placeholder="exemplo@gmail.com"
-                    className="block w-full p-4 text-white text-sm  outline-none border border-[#585d65] rounded-3xl bg-back sm:text-md focus:ring-white focus:border-white"
-                  />
-                </div>
-
-                <div className="mb-6">
-                  <label
-                    htmlFor="message"
-                    className="block mb-2 ml-6 text-sm font-medium text-gray-900 dark:text-white"
-                  >
-                    Sua mensagem
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    className="block p-3 w-full text-sm outline-none text-white rounded-3xl border  border-[#585d65]  bg-back sm:text-md focus:ring-white focus:border-white"
-                    placeholder="Escreva aqui"
-                  ></textarea>
-                </div>
-
-                <div>
-                  <Button click={() => { }} title="Enviar Mensagem"><BiMailSend className="" /></Button>
-                </div>
-              </div>
-              <div className="rounded-3xl py-16 px-8 border  border-[#585d65] bg-back ">
-                <div className="grid gap-x-16 gap-y-1 lg:grid-cols-4">
-                  <SubTitle subTitle={"Idade"}></SubTitle>
-                  <span className="col-span-3">32</span>
-
-                  <SubTitle subTitle={"Endereço"}></SubTitle>
-                  <span className="col-span-3">
-                    Formiga - Minas Gerais - Brasil
-                  </span>
-
-                  <SubTitle subTitle={"Email"}></SubTitle>
-                  <span className="col-span-3">
-                    <a href="mailto:leandrorochaoliveira@icloud.com">
-                      leandrorochaoliveira@icloud.com
-                    </a>
-                  </span>
-
-                  <SubTitle subTitle={"Telefone"}></SubTitle>
-                  <span className="col-span-3">
-                    <a href="tel:+5537999110817">(37) 9 9911-0817</a>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </Section>
+          <Contact />
           <footer></footer>
         </div>
       </main>
