@@ -1,5 +1,4 @@
 import { BiMailSend } from "react-icons/bi"
-import Button from "../Button"
 import { useForm, SubmitHandler } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import { useState } from "react";
@@ -41,7 +40,7 @@ export default function EmailForm() {
           placeholder="Nome"
           className="block w-full p-4 text-white text-sm  outline-none border border-[#585d65] rounded-3xl bg-back sm:text-md focus:ring-white focus:border-white"
         />
-        <p className="p-4 text-red-400 text-xs mb-0">{errors.nome && "Digite nome para contato"}</p>
+        {errors.nome && <p className="p-4 text-red-400 text-xs mb-0">Digite nome para contato</p>}
       </div>
 
       <div className="mb-6">
@@ -73,11 +72,13 @@ export default function EmailForm() {
           className="block p-3 w-full text-sm outline-none text-white rounded-3xl border  border-[#585d65]  bg-back sm:text-md focus:ring-white focus:border-white"
           placeholder="Escreva aqui"
         ></textarea>
-        <p className="p-4 text-red-400 text-xs mb-0">{errors.msg && "Digite uma mensagem"}</p>
+        {errors.msg && <p className="p-4 text-red-400 text-xs mb-0">Digite uma mensagem</p>}
       </div>
 
       <div>
-        <Button click={() => { }} title="Enviar Mensagem"><BiMailSend className="" /></Button>
+        <button className="button" type="submit">
+          <BiMailSend className="" /><span className="relative">Enviar Mensagem</span>
+        </button>
       </div>
     </form>
   )
