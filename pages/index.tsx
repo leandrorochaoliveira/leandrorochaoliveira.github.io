@@ -5,14 +5,14 @@ import ImageProfile from "../components/ImageProfile";
 import Navbar from "../components/navbar/Navbar";
 import Section from "../components/Section";
 import SubTitle from "../components/SubTitle";
-import Button from "../components/Button";
-import { DiAndroid, DiCode } from "react-icons/di";
+
 import { BiMailSend, BiChevronsDown } from "react-icons/bi";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa"
 import Portfolio from "../components/portfolio/Portfolio";
 import Experiencia from "../components/experiencia/Experiencia";
 import { scrollToElement } from "../shared/scroll";
 import Contact from "../components/contact/Contact";
+import Services from "../components/services/ServicesSection";
 
 export default function Home() {
   return (
@@ -96,43 +96,7 @@ export default function Home() {
               </div>
             </>
           </Section>
-          <Section title="Serviços" id="Services" subTitle="O que eu faço">
-            <>
-              <div className="grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                <div>
-                  <div className="icon">
-                    <DiCode />
-                  </div>
-                  <h4>Web Development</h4>
-                  <p>
-                    Desenvolvimento de aplicativos, sites e sistemas web.
-                    Tenho experiência em ferramentas de web design e conhecimento em SEO
-                  </p>
-                </div>
-                <div>
-                  <div className="icon">
-                    <DiAndroid />
-                  </div>
-                  <h4>App Development</h4>
-                  <p>
-                    Desenvolvimento de aplicativos IOS e Android utilizando React Native e Ionic/Cordova
-                    Tenho experiência em publicação nas principais lojas de apps (App Store e Play Store)
-                  </p>
-                </div>
-                {/*<div>
-                  <div className="icon">
-                    <DiPhotoshop />
-                  </div>
-                  <h4>Web Design</h4>
-                  <p>
-                    Da The web development process includes: web design, web
-                    content, client-side / server-side scripting and network
-                    security configuration.
-                  </p>
-                </div>*/}
-              </div>
-            </>
-          </Section>
+          <Services />
           <Experiencia />
           {/* <Section title="Skills" id="Skills">
             <>
