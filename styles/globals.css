@@ -1,26 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #74b9ff;
+  --color-back: #373b40;
+  --color-second: #585d65;
+}
 
 .button {
   @apply border-primary overflow-hidden relative border transition-all	rounded-full p-4 uppercase text-primary font-semibold text-xs flex items-center gap-1;
 }
 
 .button:hover {
-  @apply text-white
+  @apply text-white;
 }
 
 .button::before {
-  content:"";
-  @apply bg-primary z-0 rounded-full transition-all block absolute h-full w-0 top-0 left-1/2 translate-x--1/2 
+  content: "";
+  @apply bg-primary z-0 rounded-full transition-all block absolute h-full w-0 top-0 left-1/2 translate-x-1/2;
 }
 
 .button:hover::before {
-  @apply w-full left-0 translate-x-0
+  @apply w-full left-0 translate-x-0;
 }
 
 p {
-  @apply mb-4 text-start font-normal
+  @apply mb-4 text-start font-normal;
 }
 
 h4 {
@@ -32,7 +36,7 @@ h4 {
 }
 #Contact,
 #Services {
- @apply relative
+  @apply relative;
 }
 #Contact::before,
 #Services::before {
@@ -40,4 +44,3 @@ h4 {
   @apply absolute top-0 right-0 left-0 bottom-0 opacity-10 bg-cover;
   background-image: url(../public/bggit.png);
 }
-
