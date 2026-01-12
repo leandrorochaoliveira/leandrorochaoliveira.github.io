@@ -1,10 +1,11 @@
+import { ReactNode } from "react";
 import SubTitle from "./SubTitle";
 
 type Props = {
   title?: string;
   subTitle?: string;
   id: string;
-  children: JSX.Element;
+  children: ReactNode;
 };
 const Section = ({ title, children, id, subTitle }: Props) => (
   <section id={id} className="font-normal border-b border-second p-8">
@@ -13,7 +14,11 @@ const Section = ({ title, children, id, subTitle }: Props) => (
         {title}
       </h2>
     )}
-    {subTitle && <div className="uppercase"><SubTitle subTitle={subTitle}></SubTitle></div>}
+    {subTitle && (
+      <div className="uppercase">
+        <SubTitle subTitle={subTitle}></SubTitle>
+      </div>
+    )}
     <div className="text-left text-white ">{children}</div>
   </section>
 );
